@@ -1,0 +1,6 @@
+#!/bin/sh
+# help/decode - post-processing filter for legacy rhtm output.
+# Rewrites href="javascript:open_code('CODE')" links back to plain
+# <a name="CODE"> anchors so the page is static and searchable.
+# Usage: help/decode <file>...   (reads stdin when given no files)
+sed -e "s/href=\"javascript:open_code[(].\([A-Z0-9* ]*\)['][)]/name=\"\1/g" "$@"

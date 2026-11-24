@@ -1,0 +1,7 @@
+book-output/
+susv5-book/*
+!susv5-book/book.toml
+!susv5-book/theme/
+!susv5-book/theme/**
+__pycache__/
+*.pyc

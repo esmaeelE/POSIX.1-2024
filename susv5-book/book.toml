@@ -1,0 +1,17 @@
+[book]
+title = "The Single UNIX Specification, Version 5"
+authors = ["The Open Group"]
+language = "en"
+src = "src"
+
+[build]
+build-dir = "../book-output"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "ayu"
+additional-css = ["theme/custom.css"]
+additional-js = ["theme/custom.js"]
+
+[output.html.search]
+enable = true
